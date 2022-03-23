@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App Permissions Request</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='static/css/index.css'>
+    <script src='http://code.jquery.com/jquery-1.4.2.js'></script>
+  </head>
+  <body>
+    <section class='container'>
+      <div class='center content'>
+        <div class='spacer'></div>
+        <img src='/static/css/webex_logo.png'/>
+        <div class='spacer'></div>
+        <br>
+        <div>
+          <input type="hidden" id="access_token" value="{{access_token}}"/>
+          <input type="hidden" id="refresh_token" value="{{refresh_token}}"/>
+        </div>
+      </div>
+    </section>
+          <p> Access Token:    {{access_token}}</p><br>
+          <p> Refresh Token:   {{refresh_token}}</p><br>
+    <div class='center content'><div class='granted' style='width:510px;'><h1>Permissions Granted!</h1></div></div>
+  </body>
+</html>
